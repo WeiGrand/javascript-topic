@@ -1,9 +1,21 @@
+/*
+ * @Author: heweiguang 
+ * @Date: 2017-11-05 15:11:39 
+ * @Last Modified by: heweiguang
+ * @Last Modified time: 2017-11-05 15:42:18
+ */
 //实现步骤
 //1绑定this
 //2传递参数 eg: event对象
 //3是否立即执行
-//4返回值 当immediate为true时才应该有返回值
+//4返回值 当immediate 为 true时才应该有返回值
 //5可取消性
+/**
+ * 
+ * @param {*} fn 
+ * @param {*} wait 
+ * @param {*} immediate 
+ */
 function debounce(fn, wait, immediate) {
     let timeout, result;
 

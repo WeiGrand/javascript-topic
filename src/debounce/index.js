@@ -13,10 +13,10 @@ function debounceFn() {
     return debounce(getUserAction, 1000, true);
 }
 
-const setUsetAction = debounceFn();
+const setUserAction = debounceFn();
 
-container.addEventListener('mousemove', setUsetAction, false);
+container.addEventListener('mousemove', setUserAction, false);
 cancel.addEventListener('click', function() {
-    setUsetAction.cancel();
+    setUserAction.cancel();
     return false;
 }, false);
