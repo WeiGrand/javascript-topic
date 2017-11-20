@@ -2,7 +2,7 @@
  * @Author: heweiguang 
  * @Date: 2017-11-19 15:38:55 
  * @Last Modified by: heweiguang
- * @Last Modified time: 2017-11-19 19:45:12
+ * @Last Modified time: 2017-11-20 10:30:03
  */
 
 //拷贝分为浅拷贝(对于对象与数组只复制引用), 和深拷贝(复制值)
@@ -52,6 +52,6 @@ function extend(obj) {
 
 module.exports = {
     shallowCopy,
-    deepCopy
+    deepCopy,
+    extend
 }
-
