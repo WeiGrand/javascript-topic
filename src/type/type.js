@@ -2,7 +2,7 @@
  * @Author: heweiguang 
  * @Date: 2017-11-19 13:08:54 
  * @Last Modified by: heweiguang
- * @Last Modified time: 2017-11-19 15:38:57
+ * @Last Modified time: 2017-11-20 22:50:50
  */
 
  const class2type = {};
@@ -96,10 +96,15 @@
             typeof length === 'number' && length > 0 && (length - 1) in obj; //如果 length 大于0 那 obj[length - 1] 必须存在
  }
 
+ function isFunction(obj) {
+     return type(obj) === 'function';
+ }
+
  module.exports = {
      type,
      isPlainObject,
      isEmptyObject,
      isWindow,
-     isArrayLike
+     isArrayLike,
+     isFunction
  }
