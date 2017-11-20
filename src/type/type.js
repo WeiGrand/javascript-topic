@@ -2,7 +2,7 @@
  * @Author: heweiguang 
  * @Date: 2017-11-19 13:08:54 
  * @Last Modified by: heweiguang
- * @Last Modified time: 2017-11-19 15:20:29
+ * @Last Modified time: 2017-11-19 15:38:57
  */
 
  const class2type = {};
