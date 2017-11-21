@@ -2,7 +2,7 @@
  * @Author: heweiguang 
  * @Date: 2017-11-19 15:38:55 
  * @Last Modified by: heweiguang
- * @Last Modified time: 2017-11-20 23:08:49
+ * @Last Modified time: 2017-11-20 23:24:37
  */
 
 //拷贝分为浅拷贝(对于对象与数组只复制引用), 和深拷贝(复制值)
@@ -79,6 +79,8 @@ function extend() {
                     continue;
                 }
 
+                //如果copy是对象，src不是对象，就把src初始化为{}
+                //如果copy是数组，src不是数组，就把src初始化为[]
                 if(deep && copy && ( Type.isPlainObject(copy) || (copyIsArray = Array.isArray(copy)) )) {
 
                     if(copyIsArray) {
